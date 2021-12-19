@@ -1,0 +1,47 @@
+html{
+    background: linear-gradient(to top, #444444, #ffffff);
+}
+footer{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+img{
+    width:3vw;
+    height: 3vw; 
+}
+#avatar{
+    width:15vw;
+    height: 15vw;
+    margin: 5vh 42% 5vh;
+}
+#login-data{
+    width:50vw;
+    height: fit-content;
+    margin: 0vh 25% 5vh;
+    padding: 5px 5px;
+    border: 2px solid #777777;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+#registration{
+    display: flex;
+    flex-direction: column;
+}
+
+label, input{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+button{
+    margin-top: 5px;
+    font-size: 15px; 
+}
+
+label{
+    text-align: center;
+}

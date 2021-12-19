@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta name="description" content="Главная страница" />
+  <meta charset="utf-8">
+  <title>Задачи</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Dmitry Tarakanovskiy">
+  <link rel="shortcut icon" href="img/ico/favicon.ico" type="image/ico">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dialog.css">
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/dialog.js"></script>
+</head>
+
+<body onload="Load()">
+    <div id="dialog" class="hide">
+      <div id="add-task-head">
+      <button id="close-dialog" onclick="closeD()">X</button>
+      <h3>Добавление задач</h3>
+      </div>
+      <div id="add-task-body">
+        <div class="task-body-item">
+          <label for="Header">Шапка</label>
+        </div>
+        <div class="task-body-item">
+          <input name="Header" id="task-header"></input>
+        </div>
+        <div class="task-body-item">
+          <label for="task-text">Текст</label>
+        </div>
+        <div class="task-body-item">
+          <textarea name="task-text" id="task-text" cols="40" rows="8"></textarea>
+        </div>
+        <div class="task-body-item">
+          <label>Дата завершения</label>
+        </div>
+        <div class="task-body-item">
+          <input id="end_date"placeholder="ГГГГ-ММ-ДД"></input>
+        </div>
+        <div class="task-body-item">
+          <button onclick="add()">Добавить</button>
+        </div>
+      </div>
+    </div>
+<div class="container">
+<header>
+  <nav>
+      <div class="navbar">
+        <div class="nav-buttons">
+          <img src="img/ico/all.png" onclick="toAll()"/>
+          <img src="img/ico/add.png" onclick="displayD()"/>
+        </div>
+        <h1>Список задач</h1>
+      </div>
+  </nav>
+</header>
+
+<main role="main">  
+      <div id="today-head"class="today-col">
+        <h2>Задачи на сегодня</h2>
+      </div>
+    <div id="today-tasks" class="tasks-container">
+    </div>
+      <div id="old-head"class="old-col">
+        <h2>Просроченные задачи</h2>
+      </div>
+    <div id="old-tasks" class="tasks-container">
+    </div>
+      <div id="actual-head" class="actual-col">
+        <h2>Актуальные задачи</h2>
+      </div>
+    <div id="actual-tasks" class="tasks-container">
+    
+    </div>
+      <div id="ended-head" class="ended-col">
+        <h2>Завершенные задачи</h2>
+      </div>
+      <div id="ended-tasks" class="tasks-container">
+
+      </div>
+    </div>
+  </div>   
+</main>
+<footer>
+
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+html{
+    padding: 0%;
+}
+
+header{
+    background-color: rgb(85, 85, 85); 
+    width: 100%;
+    height: 50px; 
+    position: fixed;
+    top: 0%;
+    left: 0%;
+}
+.container{
+    position: relative;
+    margin-top: 50px;
+}
+.navbar{
+    display:flex;
+    flex-direction: row;
+    height: inherit;
+}
+
+.nav-buttons{
+  display: flex;
+  flex-direction: row;
+  width: 10%;
+  height: 40px;
+  left: 0%;
+}
+
+
+img{
+    width: auto;
+    margin-left: 5px;
+    height: inherit;
+}
+
+h1, h2{
+    text-align: center;
+    color: white;
+}
+
+h1{
+    width: 60%;
+    margin-left: 10%;
+    margin-top: 5px;
+    text-align: center;
+}
+
+main{
+    margin-top: 80px;
+}
+.tasks-container{
+    width: auto;
+    height: fit-content;
+    border:1px gray solid;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.tasks-container-hide{
+    display: none;
+}
+
+.task{
+    width: auto;
+    height: fit-content;
+    text-align: center;
+    border: 1px gray solid;
+    margin: 2px;
+}
+
+.task_end_button{
+    width: fit-content;
+    height: fit-content;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.task_button_none{
+    display: none;
+}
+
+#today-head,#old-head,#actual-head,#ended-head{
+height: 35px;
+border-radius: 5px;
+}
+
+.today-col{
+    background: blue;
+}
+
+.old-col{
+    background: red;
+}
+
+.actual-col{
+    background: green;
+}
+
+.ended-col{
+    background: rgb(54, 54, 54);
+}
+
+summary{
+    font-size: 20px;
+    color:#fafafa;
+}

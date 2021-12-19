@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta name="description" content="Страница регистрации" />
+  <meta charset="utf-8">
+  <title>Регистрация</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Dmitry Tarakanovskiy">
+  <link rel="shortcut icon" href="img/ico/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+<div class="container">
+  <img src="img/avatar.png" id="avatar"/>
+  <div id="login-data">
+      <label from="login">Логин</label>
+      <input name="login" id="login" placeholder="Введите логин"/>
+      <label from="password">Пароль</label>
+      <input type="password" name="password" id="password" placeholder="Введите пароль"/>
+      <input type="password" name="password2" id="password2" placeholder="Повторите пароль"/>
+      <button name="registration"onclick="Registration()">Зарегистрироваться</button>
+      <label>Уже имеете учетную запись?</label>
+      <button name="go-to-login"onclick="toLogin()">Войти</button>
+      </div>
+  </div>
+</div>
+</body>
+</html>

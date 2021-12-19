@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta name="description" content="Страница входа" />
+  <meta charset="utf-8">
+  <title>Вход</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Dmitry Tarakanovskiy">
+  <link rel="shortcut icon" href="images/ico/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+<div class="container">
+  <img src="images/avatar.png" id="avatar"/>
+  <div id="login-data">
+      <label from="login">Логин</label>
+      <input name="login" id="login" placeholder="Введите логин"/>
+      <label from="password">Пароль</label>
+      <input type="password" name="password" id="password" placeholder="Введите пароль"/>
+      <button onclick="Login()">Войти</button>
+      <div id="registration">
+      <label for="Registration">или</label>
+      <button name="Registration"onclick="Registration()">Зарегистрироваться</button>
+      </div>
+  </div>
+</div>
+<footer>
+    <img src="images/ico/vk.png" onclick="location.replace('https://vk.com/did_os')"/>
+    <img src="images/ico/instagram.png"onclick="location.replace('https://instagram.com/did_os')"/>
+</footer>
+</body>
+</html>
